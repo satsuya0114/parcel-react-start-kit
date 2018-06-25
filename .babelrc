@@ -1,0 +1,19 @@
+{
+  "presets": [
+    "env",
+    "react"
+  ],
+  "plugins": [
+    "transform-runtime",
+    "transform-decorators-legacy",
+    "transform-class-properties",
+    "transform-object-rest-spread",
+    "react-hot-loader/babel",
+    ["module-resolver", {
+      "root": ["./src"],
+      "alias": {
+        "@containers": "./containers"
+      }
+    }]
+  ]
+}
